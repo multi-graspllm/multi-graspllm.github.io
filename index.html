@@ -43,6 +43,9 @@
     display: block;
     margin: 0 auto; /* 水平居中 */
     }
+    .content {
+    text-align: left; /* 强制内容靠左对齐 */
+  }
   </style>
   
 </head>
@@ -133,20 +136,48 @@
 </section>
 
 <div class="content has-text-justified"></div>
-
+<!-- 
 <section class="section">
   <div class="container is-max-desktop">
     <div class="columns is-centered">
       <div class="column is-four-fifths">
-        <!-- 添加图片 -->
+      
         <div class="columns is-centered">
           <div class="column is-half has-text-centered">
             <img src="./static/picture/overview_output_01.png" class="abstract-image" alt="Abstract Image"/>
           </div>
         </div>
-        <!-- Abstract 标题和内容 -->
+      
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
+          <p>
+            Multi-hand semantic grasp generation aims to generate feasible and semantically appropriate grasp poses for different robotic hands based on natural language instructions. 
+            Although the task is highly valuable, due to the lack of multi-hand grasp datasets with fine-grained contact description between robotic hands and objects, it is still a long-standing difficult task. 
+            In this paper, we present Multi-GraspSet, the first large-scale multi-hand grasp dataset with automatically contact annotations. 
+            Based on Multi-GraspSet, we propose Multi-GraspLLM, a unified language-guided grasp generation framework. It leverages large language models (LLM) to handle variable-length sequences, generating grasp poses for diverse robotic hands in a single unified architecture. 
+            Multi-GraspLLM first aligns the encoded point cloud features and text features into a unified semantic space.
+             It then generates grasp bin tokens which are subsequently converted into grasp pose for each robotic hand via hand-aware linear mapping. 
+            The experimental results demonstrate that our approach significantly outperforms existing methods on Multi-GraspSet.  
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- 图片 -->
+    <div class="columns is-centered">
+      <div class="column is-half has-text-centered">
+        <img src="./static/picture/abstract_image.png" class="abstract-image" alt="Abstract Image"/>
+      </div>
+    </div>
+
+    <!-- Abstract 内容 -->
+    <div class="columns">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content">
           <p>
             Multi-hand semantic grasp generation aims to generate feasible and semantically appropriate grasp poses for different robotic hands based on natural language instructions. 
             Although the task is highly valuable, due to the lack of multi-hand grasp datasets with fine-grained contact description between robotic hands and objects, it is still a long-standing difficult task. 
@@ -185,24 +216,6 @@
 </section>
 
 
-<section class="section">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <div class="columns is-centered is-vcentered">
-          <div class="column is-half has-text-centered">
-            <img src="./static/picture/train_data_01.png" class="interpolation-image" alt="Grasp Visualization Image 1"/>
-            <p>Grasp Visualization 1</p>
-          </div>
-          <div class="column is-half has-text-centered">
-            <img src="./static/picture/vis_dataset_grasp_output_01.png" class="interpolation-image" alt="Grasp Visualization Image 2"/>
-            <p>Grasp Visualization 2</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
 
 
@@ -244,6 +257,24 @@
           <div class="column is-full-width has-text-centered">
             <img src="./static/picture/Supp_visDataset.png" class="interpolation-image" alt="Dataset Construction Image"/>
             <p>Visualization of the Multi-GraspLLM Results/p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <div class="columns is-centered is-vcentered">
+          <div class="column is-half has-text-centered">
+            <img src="./static/picture/train_data_01.png" class="interpolation-image" alt="Grasp Visualization Image 1"/>
+            <p>Grasp Visualization 1</p>
+          </div>
+          <div class="column is-half has-text-centered">
+            <img src="./static/picture/vis_dataset_grasp_output_01.png" class="interpolation-image" alt="Grasp Visualization Image 2"/>
+            <p>Grasp Visualization 2</p>
           </div>
         </div>
       </div>
