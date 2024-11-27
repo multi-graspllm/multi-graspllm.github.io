@@ -143,18 +143,21 @@ p {
                   <span>arXiv</span>
                 </a>
               </span>
-              <span class="link-block">
-                <a href="" class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon"><i class="fab fa-github"></i></span>
-                  <span>Code</span>
-                </a>
-              </span>
+              
               <span class="link-block">
                 <a href="" class="external-link button is-normal is-rounded is-dark">
                   <span class="icon"><i class="far fa-images"></i></span>
-                  <span>Data</span>
+                  <span>DataSet(Coming soon)</span>
                 </a>
               </span>
+              <span class="link-block">
+                <a href="" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="fab fa-github"></i></span>
+                  <span>Code(Coming soon)</span>
+                </a>
+              </span>
+
+
             </div>
           </div>
         </div>
@@ -317,8 +320,24 @@ p {
       <div class="column is-full-width">
         <h2 class="title is-3">Visualization</h2>
         <div class="content has-text-justified">
-          <p>
+          <!-- <p>
             The visualization illustrates the results of the Multi-GraspLLM, highlighting its capability to generate diverse and semantically accurate grasps for robotic hands.
+          </p> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h3 class="title is-4"> Multi-GraspSet and Training data Templates</h3>
+        <div class="content has-text-justified">
+          <p>
+            Multi-GraspSet includes grasp poses of common objects across three robotic hands with
+            two types of contact annotations. Based on this dataset, we generate training data for Multi-GraspLLM, consisting of three different categories.
           </p>
         </div>
       </div>
@@ -326,20 +345,20 @@ p {
   </div>
 </section>
 
-
-
 <section class="section">
   <div class="container is-max-desktop">
     <div class="columns is-centered">
       <div class="column is-full-width">
         <div class="columns is-centered is-vcentered">
-          <div class="column is-half has-text-centered">
-            <img src="./static/picture/train_data_01.png" class="interpolation-image" alt="Grasp Visualization Image 1"/>
-            <p>Training Data Templates</p>
-          </div>
+          
           <div class="column is-half has-text-centered">
             <img src="./static/picture/vis_dataset_grasp_output_01.png" class="interpolation-image" alt="Grasp Visualization Image 2"/>
             <p>Illustration of Multi-GraspSet</p>
+          </div>
+
+          <div class="column is-half has-text-centered">
+            <img src="./static/picture/train_data_01.png" class="interpolation-image" alt="Grasp Visualization Image 1"/>
+            <p>Training Data Templates</p>
           </div>
         </div>
       </div>
@@ -347,6 +366,22 @@ p {
   </div>
  </section>
 
+
+
+ <section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h3 class="title is-4"> Multi-GraspLLM Results</h3>
+        <div class="content has-text-justified">
+          <p>
+            Multi-GraspLLM can generate different robotic hand grasping poses based on instructions with varying levels of contact information.For
+            the low-level instruction, model generates grasps without any contact information, while mid-level focuses on the object part information. The high-level instruction utilizes finger contact information, enabling our model to simply control individual fingers.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 <!-- 第二部分：单张全宽图片 -->
 <section class="section">
   <div class="container is-max-desktop">
@@ -357,6 +392,21 @@ p {
             <img src="./static/picture/Supp_visDataset.png" class="interpolation-image" alt="Visualization Image"/>
             <p>Visualization of the Multi-GraspLLM Results</p>
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Real World Experiment</h2>
+        <div class="content has-text-justified">
+          <p>
+            We conducted extensive experiments in real world environments. 
+          </p>
         </div>
       </div>
     </div>
