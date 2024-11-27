@@ -148,6 +148,29 @@
   </div>
 </section>
 
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Dataset Construction</h2>
+        <div class="content has-text-justified">
+          <p>
+            The initial unified grasp generation produces physically stable grasps. Then, through two levels of annotations, we generate pair data containing basic conversation with corresponding grasp pose for each robotics hand.
+          </p>
+        </div>
+        <div class="columns is-vcentered interpolation-panel">
+          <div class="column is-full-width has-text-centered">
+            <img src="./static/picture/dataset_construction.png" class="interpolation-image" alt="Dataset Construction Image"/>
+            <p>Dataset Construction</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 <section class="section">
   <div class="container is-max-desktop">
     <div class="columns is-centered">
@@ -167,20 +190,22 @@
   </div>
 </section>
 
+
+
 <section class="section">
   <div class="container is-max-desktop">
     <div class="columns is-centered">
       <div class="column is-full-width">
-        <h2 class="title is-3">Dataset Construction</h2>
+        <h2 class="title is-3">Multi-GraspLLM</h2>
         <div class="content has-text-justified">
           <p>
-            The initial unified grasp generation produces physically stable grasps. Then, through two levels of annotations, we generate pair data containing basic conversation with corresponding grasp pose for each robotics hand.
+            The point encoder extracts point clouds from objects and maps them with language descriptions into the same latent space. The LLM backbone then generate grasp bin tokens as output. Finally, we convert these grasp bin tokens into corresponding grasp angles for each robotic hand.
           </p>
         </div>
         <div class="columns is-vcentered interpolation-panel">
-          <div class="column is-12 has-text-centered">
-            <img src="./static/picture/dataset_construction.png" class="interpolation-image" alt="Dataset Construction Image"/>
-            <p>Dataset Construction</p>
+          <div class="column is-full-width has-text-centered">
+            <img src="./static/picture/pipline-squeeze_01.png" class="interpolation-image" alt="Dataset Construction Image"/>
+            <p>Pipeline of Multi-GraspLLM</p>
           </div>
         </div>
       </div>
@@ -188,19 +213,30 @@
   </div>
 </section>
 
+
+
+
 <section class="section">
   <div class="container is-max-desktop">
     <div class="columns is-centered">
       <div class="column is-full-width">
-        <h2 class="title is-3">Grasp Visualization</h2>
-        <div class="column is-12 has-text-centered">
-          <img src="./static/picture/Supp_visDataset.png" class="interpolation-image" alt="Grasp Visualization Image"/>
-          <p>Grasp Visualization</p>
+        <h2 class="title is-3">Visualization</h2>
+        <div class="content has-text-justified">
+          <p>
+            
+          </p>
+        </div>
+        <div class="columns is-vcentered interpolation-panel">
+          <div class="column is-full-width has-text-centered">
+            <img src="./static/picture/Supp_visDataset.png" class="interpolation-image" alt="Dataset Construction Image"/>
+            <p>Visualization of the Multi-GraspLLM Results/p>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </section>
+
 
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
