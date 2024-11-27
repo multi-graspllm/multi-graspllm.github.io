@@ -37,7 +37,14 @@
       height: auto; /* 保持宽高比 */
       max-width: 100%;  /* 不超过容器宽度 */
     }
+    .abstract-image {
+    width: 100%;  /* 图片宽度自适应列宽 */
+    height: auto; /* 保持宽高比 */
+    display: block;
+    margin: 0 auto; /* 水平居中 */
+    }
   </style>
+  
 </head>
 <body>
 
@@ -131,6 +138,13 @@
   <div class="container is-max-desktop">
     <div class="columns is-centered">
       <div class="column is-four-fifths">
+        <!-- 添加图片 -->
+        <div class="columns is-centered">
+          <div class="column is-half has-text-centered">
+            <img src="./static/picture/overview_output_01.png" class="abstract-image" alt="Abstract Image"/>
+          </div>
+        </div>
+        <!-- Abstract 标题和内容 -->
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
