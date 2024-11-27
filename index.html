@@ -32,12 +32,9 @@
   <script src="./static/js/bulma-slider.min.js"></script>
   <script src="./static/js/index.js"></script>
   <style>
-    .interpolation-image {
-      width: 100%; /* 确保图片最大化适应容器 */
-      height: auto; /* 保持宽高比 */
-      max-width: 100%;  /* 不超过容器宽度 */
-    }
+
     .abstract-image {
+      background-color: transparent !important;
     width: 100%;  /* 图片宽度自适应列宽 */
     height: auto; /* 保持宽高比 */
     display: block;
@@ -46,6 +43,28 @@
     .content {
     text-align: left; /* 强制内容靠左对齐 */
   }
+
+
+  .section {
+  background-color: transparent !important; /* 删除灰色背景 */
+  border: none !important; /* 删除边框 */
+  box-shadow: none !important; /* 删除阴影 */
+}
+
+/* 移除图片样式 */
+.interpolation-image {
+  background-color: transparent !important; /* 确保图片没有背景色 */
+  border: none !important; /* 确保图片没有边框 */
+  display: block; /* 保持图片正常显示 */
+  margin: 0 auto; /* 居中显示 */
+}
+
+/* 修正 p 标签默认样式 */
+p {
+  background-color: transparent !important; /* 确保文字背景透明 */
+  border: none !important;
+  box-shadow: none !important;
+}
   </style>
   
 </head>
@@ -169,7 +188,7 @@
     <!-- 图片 -->
     <div class="columns is-centered">
       <div class="column is-half has-text-centered">
-        <img src="./static/picture/abstract_image.png" class="abstract-image" alt="Abstract Image"/>
+        <img src="./static/picture/overview_output_01.png" class="abstract-image" alt="Abstract Image"/>
       </div>
     </div>
 
@@ -243,26 +262,7 @@
 
 
 
-<section class="section">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Visualization</h2>
-        <div class="content has-text-justified">
-          <p>
-            
-          </p>
-        </div>
-        <div class="columns is-vcentered interpolation-panel">
-          <div class="column is-full-width has-text-centered">
-            <img src="./static/picture/Supp_visDataset.png" class="interpolation-image" alt="Dataset Construction Image"/>
-            <p>Visualization of the Multi-GraspLLM Results/p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+
 <section class="section">
   <div class="container is-max-desktop">
     <div class="columns is-centered">
@@ -282,6 +282,26 @@
   </div>
 </section>
 
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Visualization</h2>
+        <div class="content has-text-justified">
+          <p>
+            
+          </p>
+        </div>
+        <div class="columns is-vcentered interpolation-panel">
+          <div class="column is-full-width has-text-centered">
+            <img src="./static/picture/Supp_visDataset.png" class="interpolation-image" alt="Dataset Construction Image"/>
+            <p>Visualization of the Multi-GraspLLM Results</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
