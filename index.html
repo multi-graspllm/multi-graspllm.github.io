@@ -2,8 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <meta name="description"
-        content="Multi-hand LLM-Based Grasp Generation with Samentic Information Guided">
+  <meta name="description" content="Multi-hand LLM-Based Grasp Generation with Semantic Information Guided">
   <meta name="keywords" content="Robotics,Grasp Generation,Multi-hand,Dextrous Hand">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Multi-GraspLLM: A Multimodal LLM for Multi-Hand Semantic Guided Grasp Generation</title>
@@ -12,33 +11,34 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-
     function gtag() {
       dataLayer.push(arguments);
     }
-
     gtag('js', new Date());
-
     gtag('config', 'G-PYVRSFMDRL');
   </script>
 
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-        rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
   <link rel="stylesheet" href="./static/css/bulma.min.css">
   <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
-  <!-- <link rel="icon" href="./static/images/favicon.svg"> -->
-
+  <link rel="icon" href="./static/images/favicon.svg">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
   <script src="./static/js/bulma-carousel.min.js"></script>
   <script src="./static/js/bulma-slider.min.js"></script>
   <script src="./static/js/index.js"></script>
+  <style>
+    .interpolation-image {
+      display: block;
+      margin: 0 auto;
+      max-width: 80%;
+      height: auto;
+    }
+  </style>
 </head>
 <body>
 
@@ -66,14 +66,11 @@
           <a class="navbar-item" href="https://arxiv.org/abs/2410.08901">
             SegGrasp
           </a>
-          
         </div>
       </div>
     </div>
-
   </div>
 </nav>
-
 
 <section class="hero">
   <div class="hero-body">
@@ -82,95 +79,46 @@
         <div class="column has-text-centered">
           <h1 class="title is-1 publication-title">Nerfies: Deformable Neural Radiance Fields</h1>
           <div class="is-size-5 publication-authors">
-            <span class="author-block">
-              <a href="">Haosheng Li</a><sup>1*</sup>,</span>
-            <span class="author-block">
-              <a href="https://scholar.google.com/citations?user=6-bYm5EAAAAJ&hl=zh-CN&oi=ao">Weixin Mao</a><sup>2*</sup>,</span>
-            <span class="author-block">
-              <a href="https://scholar.google.com/citations?user=JBMI5yQAAAAJ&hl=zh-CN&oi=ao">Weipeng Deng</a><sup>3</sup>,
-            </span>
-            <span class="author-block">
-              <a href="">Chenyu Meng</a><sup>1</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://scholar.google.com/citations?user=bzzBut4AAAAJ&hl=zh-CN&oi=ao">Haoqiang Fan</a><sup>4</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://scholar.google.com/citations?user=YI0sRroAAAAJ&hl=zh-CN&oi=ao">Tiancai Wang</a><sup>4</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://scholar.google.com/citations?user=XhyKVFMAAAAJ&hl=zh-CN&oi=ao">Ping Tan</a><sup>=5</sup>
-            </span>
-            <span class="author-block">
-              <a href="">Hongan Wang</a><sup>1</sup>
-            </span>  
-            <span class="author-block">
-              <a href="https://www.idengxm.com/">Xiaoming Deng</a><sup>1</sup>
-            </span>  
-
-
+            <span class="author-block"><a href="">Haosheng Li</a><sup>1*</sup>,</span>
+            <span class="author-block"><a href="https://scholar.google.com/citations?user=6-bYm5EAAAAJ&hl=zh-CN&oi=ao">Weixin Mao</a><sup>2*</sup>,</span>
+            <span class="author-block"><a href="https://scholar.google.com/citations?user=JBMI5yQAAAAJ&hl=zh-CN&oi=ao">Weipeng Deng</a><sup>3</sup>,</span>
+            <span class="author-block"><a href="">Chenyu Meng</a><sup>1</sup>,</span>
+            <span class="author-block"><a href="https://scholar.google.com/citations?user=bzzBut4AAAAJ&hl=zh-CN&oi=ao">Haoqiang Fan</a><sup>4</sup>,</span>
+            <span class="author-block"><a href="https://scholar.google.com/citations?user=YI0sRroAAAAJ&hl=zh-CN&oi=ao">Tiancai Wang</a><sup>4</sup>,</span>
+            <span class="author-block"><a href="https://scholar.google.com/citations?user=XhyKVFMAAAAJ&hl=zh-CN&oi=ao">Ping Tan</a><sup>5</sup></span>
+            <span class="author-block"><a href="">Hongan Wang</a><sup>1</sup></span>
+            <span class="author-block"><a href="https://www.idengxm.com/">Xiaoming Deng</a><sup>1</sup></span>
           </div>
 
           <div class="is-size-5 publication-authors">
             <span class="author-block"><sup>1</sup>Institute of Software, Chinese Academy of Sciences</span>
             <span class="author-block"><sup>2</sup>Waseda University</span>
-            <span class="author-block"><sup>3</sup>Hongkong University</span>  
+            <span class="author-block"><sup>3</sup>Hongkong University</span>
             <span class="author-block"><sup>4</sup>MEGVII Technology</span>
-            <span class="author-block"><sup>5</sup>Hong Kong University of Science and Technology </span>  
+            <span class="author-block"><sup>5</sup>Hong Kong University of Science and Technology </span>
           </div>
 
           <div class="column has-text-centered">
             <div class="publication-links">
-              <!-- PDF Link.
               <span class="link-block">
-                <a href=""
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fas fa-file-pdf"></i>
-                  </span>
-                  <span>Paper</span>
-                </a>
-              </span> -->
-              <span class="link-block">
-                <a href=""
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="ai ai-arxiv"></i>
-                  </span>
+                <a href="" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="ai ai-arxiv"></i></span>
                   <span>arXiv</span>
                 </a>
               </span>
-              <!-- Video Link. 
               <span class="link-block">
-                <a href=""
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-youtube"></i>
-                  </span>
-                  <span>Video</span>
-                </a>
-              </span>-->
-              <!-- Code Link. -->
-              <span class="link-block">
-                <a href=""
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-github"></i>
-                  </span>
+                <a href="" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="fab fa-github"></i></span>
                   <span>Code</span>
-                  </a>
+                </a>
               </span>
-              <!-- Dataset Link. -->
               <span class="link-block">
-                <a href=""
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="far fa-images"></i>
-                  </span>
+                <a href="" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="far fa-images"></i></span>
                   <span>Data</span>
-                  </a>
+                </a>
+              </span>
             </div>
-
           </div>
         </div>
       </div>
@@ -178,26 +126,11 @@
   </div>
 </section>
 
-
-<div class="content has-text-justified">
- 
-</div>
-<div class="columns is-vcentered interpolation-panel">
-  <div class="column is-3 has-text-centered">
-    <img src="./static/picture/overview_output_01.png"
-         class="interpolation-image"
-         alt=""/>
-    
-  </div>
-</div>
-<br/>
-
-
+<div class="content has-text-justified"></div>
 
 <section class="section">
   <div class="container is-max-desktop">
-    <!-- Abstract. -->
-    <div class="columns is-centered has-text-centered">
+    <div class="columns is-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
@@ -213,26 +146,20 @@
         </div>
       </div>
     </div>
-    
   </div>
 </section>
+
 <section class="section">
   <div class="container is-max-desktop">
-    <!-- Grasp Visualization Section -->
     <div class="columns is-centered">
       <div class="column is-full-width">
-        <!-- <h2 class="title is-3">Grasp Visualization</h2> -->
         <div class="columns is-centered">
           <div class="column is-3 has-text-centered">
-            <img src="./static/picture/train_data_01.png"
-                 class="interpolation-image"
-                 alt="Grasp Visualization Image 1"/>
+            <img src="./static/picture/train_data_01.png" class="interpolation-image" alt="Grasp Visualization Image 1"/>
             <p>Grasp Visualization 1</p>
           </div>
           <div class="column is-3 has-text-centered">
-            <img src="./static/picture/vis_dataset_grasp_output_01.png"
-                 class="interpolation-image"
-                 alt="Grasp Visualization Image 2"/>
+            <img src="./static/picture/vis_dataset_grasp_output_01.png" class="interpolation-image" alt="Grasp Visualization Image 2"/>
             <p>Grasp Visualization 2</p>
           </div>
         </div>
@@ -241,78 +168,40 @@
   </div>
 </section>
 
-
 <section class="section">
   <div class="container is-max-desktop">
-
-    <!-- Animation. -->
     <div class="columns is-centered">
       <div class="column is-full-width">
-        <h2 class="title is-3">DataSet Construction</h2>
-
-        <!-- Interpolating. -->
-        <!-- <h3 class="title is-4">Interpolating states</h3> -->
+        <h2 class="title is-3">Dataset Construction</h2>
         <div class="content has-text-justified">
           <p>
-          The initial unified grasp generation produces physically stable grasps. Then, through two levels of annotations, we generate pair data containing basic conversation with corresponding grasp pose for each robotics hand.
+            The initial unified grasp generation produces physically stable grasps. Then, through two levels of annotations, we generate pair data containing basic conversation with corresponding grasp pose for each robotics hand.
           </p>
         </div>
         <div class="columns is-vcentered interpolation-panel">
           <div class="column is-3 has-text-centered">
-            <img src="./static/picture/dataset_construction.png"
-                 class="interpolation-image"
-                 alt="Interpolate start reference image."/>
+            <img src="./static/picture/dataset_construction.png" class="interpolation-image" alt="Dataset Construction Image"/>
             <p>Dataset Construction</p>
           </div>
-          
         </div>
-        <br/>
-        <!--/ Interpolating. -->
-
-        <!-- Re-rendering. -->
-        <h2 class="title is-3">Multi-GraspLLM</h2>
-        <div class="content has-text-justified">
-          <p>
-            The point encoder extracts point clouds from objects and maps them with language descriptions into the same latent space. The LLM backbone then generate grasp bin tokens as output. Finally, we convert these grasp bin tokens into corresponding grasp angles for each robotic hand.
-          </p>
-        </div>
-        <div class="column is-3 has-text-centered">
-          <img src="./static/picture/pipline-squeeze_01.png"
-               class="interpolation-image"
-               alt="Interpolate start reference image."/>
-          <!-- <p>Dataset Construction</p> -->
-        </div>
-        <!--/ Re-rendering. -->
-
       </div>
     </div>
-
-
-
-
-  
-
   </div>
 </section>
 
-
 <section class="section">
   <div class="container is-max-desktop">
-    <!-- Grasp Visualization Section -->
     <div class="columns is-centered">
       <div class="column is-full-width">
         <h2 class="title is-3">Grasp Visualization</h2>
         <div class="column is-3 has-text-centered">
-          <img src="./static/picture/Supp_visDataset.png"
-               class="interpolation-image"
-               alt="Grasp Visualization Image"/>
+          <img src="./static/picture/Supp_visDataset.png" class="interpolation-image" alt="Grasp Visualization Image"/>
           <p>Grasp Visualization</p>
         </div>
       </div>
     </div>
   </div>
 </section>
-
 
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
@@ -326,14 +215,9 @@
   </div>
 </section>
 
-
 <footer class="footer">
   <div class="container">
     <div class="content has-text-centered">
-      <!-- <a class="icon-link"
-         href="./static/videos/nerfies_paper.pdf">
-        <i class="fas fa-file-pdf"></i>
-      </a> -->
       <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
         <i class="fab fa-github"></i>
       </a>
@@ -342,13 +226,10 @@
       <div class="column is-8">
         <div class="content">
           <p>
-            This website is licensed under a <a rel="license"
-                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
+            This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
           </p>
           <p>
-            This means you are free to borrow the <a
-              href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,
+            This means you are free to borrow the <a href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,
             we just ask that you link back to this page in the footer.
             Please remember to remove the analytics code included in the header of the website which
             you do not want on your website.
